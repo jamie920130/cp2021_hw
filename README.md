@@ -1,3 +1,3 @@
 # cp2021_hw
 
-http://mde.tw/cp2021_hw
+http://jamie920130.github.io/cp2021_hw
