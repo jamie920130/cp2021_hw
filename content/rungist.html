@@ -128,7 +128,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='About.html'>About</a><li><a href='HW1.html'>HW1</a><li><a href='HW2.html'>HW2</a><li><a href='HW3.html'>HW3</a><li class='has-children'><a href='Final Project.html'>Final Project</a><ul class='dropdown'><li><a href='run.html'>run</a></li>
+                     <li class='has-children'><a href='About.html'>About</a><ul class='dropdown'><li><a href='run-1.html'>run-1</a><li class='has-children'><a href='rungist.html'>rungist</a><ul class='dropdown'><li><a href='rungist src.html'>rungist src</a></li></ul><li><a href='Hybrid.html'>Hybrid</a></li></ul><li><a href='HW1.html'>HW1</a><li><a href='HW2.html'>HW2</a><li><a href='HW3.html'>HW3</a><li class='has-children'><a href='Final Project.html'>Final Project</a><ul class='dropdown'><li><a href='run-2.html'>run-2</a></li>
                       </ul>
                 </nav>
               </div>
@@ -139,88 +139,46 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">Final Project << <a href='Final Project.html'>Previous</a> <br /><h1>run</h1>
+    <div id="tipue_search_content">run-1 << <a href='run-1.html'>Previous</a> <a href='rungist src.html'>Next</a> >> rungist src<br /><h1>rungist</h1>
+<p>rungist 在頁面中採 Javascript 呼叫 Brython 函式的方式, 讓使用者可以直接以 URL Get 執行 Gist 上的 Brython 程式. 建構的目的是讓學員可以利用 URL 繳交統一格式的 Brython 作業程式. 只要在 rungist 頁面加上 ?src=gist_url, 就可以將靜態繪圖或 animation 呈現在畫面中.</p>
+<p>以下連結左邊為 local 動態網頁編輯用, 而右邊的連結則為遠端 rungist 的 demo 範例.</p>
+<p><a href="/get_page/rungist?src=https://gist.githubusercontent.com/mdecourse/e896a4705a95ac8cc4147b355b0e87ef/raw/8954b8280c524c5781dc3c0b3565bc489d3aa3a3/cango_gear1.py">Cango gear</a> (for local link only) (<a href="https://mde.tw/cp2021/content/rungist.html?src=https://gist.githubusercontent.com/mdecourse/e896a4705a95ac8cc4147b355b0e87ef/raw/8954b8280c524c5781dc3c0b3565bc489d3aa3a3/cango_gear1.py">Cango gear</a>)</p>
+<p><a href="/get_page/rungist?src=https://gist.githubusercontent.com/mdecourse/626206cf3b2a9a9a69f7ce4bb4a116f0/raw/970e2653a7207828b3814c2c867892903734522a/spur_set_num.py">Spur with form input</a> (for local link only) (<a href="https://mde.tw/cp2021/content/rungist.html?src=https://gist.githubusercontent.com/mdecourse/626206cf3b2a9a9a69f7ce4bb4a116f0/raw/970e2653a7207828b3814c2c867892903734522a/spur_set_num.py">Spur with form input</a>)</p>
+<p><a href="/get_page/rungist?src=https://gist.githubusercontent.com/mdecourse/e896a4705a95ac8cc4147b355b0e87ef/raw/8954b8280c524c5781dc3c0b3565bc489d3aa3a3/three_spur_rotating.py">local three gears</a> (<a href="https://mde.tw/cp2021/content/rungist.html?src=https://gist.githubusercontent.com/mdecourse/e896a4705a95ac8cc4147b355b0e87ef/raw/8954b8280c524c5781dc3c0b3565bc489d3aa3a3/three_spur_rotating.py">remote three gears</a>)</p>
+<p><a href="/get_page/rungist?src=https://gist.githubusercontent.com/mdecourse/379f02862e9dfd95dbc5241d4faa2ad4/raw/e3dc77e68bbfb8f00eef2e78d3c8d2323b0f17da/clock.py">local clock</a> <a href="https://mde.tw/cp2021/content/rungist.html?src=https://gist.githubusercontent.com/mdecourse/379f02862e9dfd95dbc5241d4faa2ad4/raw/e3dc77e68bbfb8f00eef2e78d3c8d2323b0f17da/clock.py">remote clock</a></p>
+<p><a href="/get_page/run?src=https://gist.githubusercontent.com/mdecourse/e896a4705a95ac8cc4147b355b0e87ef/raw/76c510c47d88c9c218130a4ebb2cadf59803a3c7/prairiedraw_fourbar.py">local fourbar</a> <a href="https://mde.tw/cp2021/content/run.html?src=https://gist.githubusercontent.com/mdecourse/e896a4705a95ac8cc4147b355b0e87ef/raw/76c510c47d88c9c218130a4ebb2cadf59803a3c7/prairiedraw_fourbar.py">remote fourbar</a> (準備納入: <a href="https://github.com/mdecourse/Wiper-Mechanism">https://github.com/mdecourse/Wiper-Mechanism</a>)</p>
+<p style="padding-left: 30px;"><a href="https://prairielearn.readthedocs.io/en/latest/PrairieDraw/">https://prairielearn.readthedocs.io/en/latest/PrairieDraw/</a></p>
+<p style="padding-left: 30px;"><a href="https://github.com/mdecourse/PrairieDraw.js">https://github.com/mdecourse/PrairieDraw.js</a></p>
+<p><a href="/get_page/rungist/1">rungist</a> (for local edit)</p>
 <!-- 導入 brython 程式庫 -->
+<p></p>
 <script src="./../cmsimde/static/brython.js"></script>
 <script src="./../cmsimde/static/brython_stdlib.js"></script>
 <!-- 啟動 Brython -->
 <script>
 window.onload=function(){
-brython({debug:1, pythonpath:['./../cmsimde/static/','./../downloads/py/']});
+    brython();
 }
 </script>
-<p><!-- 導入 FileSaver 與 filereader --></p>
-<p>
-<script src="./../cmsimde/static/ace/FileSaver.min.js" type="text/javascript"></script>
-<script src="./../cmsimde/static/ace/filereader.js" type="text/javascript"></script>
-</p>
-<p><!-- 導入 ace --></p>
-<p>
-<script src="./../cmsimde/static/ace/ace.js" type="text/javascript"></script>
-<script src="./../cmsimde/static/ace/ext-language_tools.js" type="text/javascript"></script>
-<script src="./../cmsimde/static/ace/mode-python3.js" type="text/javascript"></script>
-<script src="./../cmsimde/static/ace/snippets/python.js" type="text/javascript"></script>
-</p>
-<p><!-- 請注意, 這裡使用 Javascript 將 localStorage["py_src"] 中存在近端瀏覽器的程式碼, 由使用者決定存檔名稱--></p>
-<p>
-<script type="text/javascript">
-function doSave(storage_id, filename){
-    var blob = new Blob([localStorage[storage_id]], {type: "text/plain;charset=utf-8"});
-    filename = document.getElementById(filename).value
-    saveAs(blob, filename+".py");
-}
+<!-- 頁面載入後執行 brythonListener() -->
+<script>
+$(document).ready( function() {
+    brythonListener();
+});
 </script>
-</p>
-<p><!-- 印出版次與關鍵字程式 --></p>
-<p>
-<script type="text/python3">
-from browser import document as doc
-import ace
-# 清除畫布
-def clear_bd(ev):
-    bd = doc["brython_div"]
-    bd.clear()
-# Brython 3.3.4 內建的 container 名稱為  'container' 且 turtle 輸出為 svg 必須使用 div 訂定 id
-Ace = ace.Editor(editor_id="kw_editor", console_id="kw_console", container_id="kw__container", storage_id="kw_py_src" )
-# 從 gist 取出程式碼後, 放入 editor 作為 default 程式
+<!-- 建立讓 Javascript 執行的 brython 程式 -->
+<script type="text/python">
+from browser import document
+from browser import window
+
 def run():
-    # 利用 get 取下 src 變數值
-    try:
-        url = doc.query["src"]
-    except:
-        url = "https://gist.githubusercontent.com/mdecourse/e896a4705a95ac8cc4147b355b0e87ef/raw/8954b8280c524c5781dc3c0b3565bc489d3aa3a3/cango_gear1.py"
-    prog = open(url).read()
+    prog = open(document.query["src"]).read()
+    ns = {'__name__':'__main__'}
+    exec(prog, ns)
 
-    # 將程式載入編輯區
-    Ace.editor.setValue(prog)
-    Ace.editor.scrollToRow(0)
-    Ace.editor.gotoLine(0)
-    # 直接執行程式
-    #ns = {'__name__':'__main__'}
-    #exec(prog, ns)
-    # 按下 run 按鈕
-    Ace.run()
-
-# 執行程式, 顯示輸出結果與清除輸出結果及對應按鈕綁定
-doc['kw_run'].bind('click', Ace.run)
-doc['kw_show_console'].bind('click', Ace.show_console)
-doc['kw_clear_console'].bind('click', Ace.clear_console)
-doc['clear_bd'].bind('click', clear_bd)
-# 呼叫函式執行
-run()
+# 透過 window 將 Brython 的 run() 函式與 Javascript 的  brythonListner 函式對應
+window.brythonListener = run()
 </script>
-</p>
-<p><!-- 用來顯示程式碼的 editor 區域 --></p>
-<div id="kw_editor" style="width: 600px; height: 300px;"></div>
-<p><!-- 以下的表單與按鈕與前面的 Javascript doSave 函式以及 FileSaver.min.js 互相配合 --></p>
-<!-- 存擋表單開始 --><form><label>Filename: <input id="kw_filename" placeholder="input file name" type="text"/>.py</label> <input onclick="doSave('kw_py_src', 'kw_filename');" type="submit" value="Save"/></form><!-- 存擋表單結束 -->
-<p></p>
-<!-- 執行與清除按鈕開始 -->
-<p><button id="kw_run">Run</button> <button id="kw_show_console">Output</button> <button id="kw_clear_console">清除輸出區</button><button id="clear_bd">清除繪圖區</button><button onclick="window.location.reload()">Reload</button></p>
-<!-- 執行與清除按鈕結束 -->
-<p></p>
-<!-- 程式執行 ouput 區 -->
-<div style="width: 100%; height: 100%;"><textarea autocomplete="off" id="kw_console"></textarea></div>
 <!-- Brython 程式執行的結果, 都以 brython_div 作為切入位置 -->
 <div id="brython_div"></div>
 <!-- 導入 gearUtils-0.9.js Cango 齒輪繪圖程式庫 -->
@@ -228,7 +186,8 @@ run()
 <script src="https://mde.tw/cp2021/cmsimde/static/gearUtils-09.js"></script>
 <script src="https://mde.tw/cp2021/cmsimde/static/SVGpathUtils-6v03-min.js"></script>
 <script src="https://mde.tw/cp2021/cmsimde/static/sylvester.js"></script>
-<script src="https://mde.tw/cp2021/cmsimde/static/PrairieDraw.js"></script><br />Final Project << <a href='Final Project.html'>Previous</a> </div>
+<script src="https://mde.tw/cp2021/cmsimde/static/PrairieDraw.js"></script>
+<br />run-1 << <a href='run-1.html'>Previous</a> <a href='rungist src.html'>Next</a> >> rungist src</div>
         
     <!-- footer -->
       <div class="container">
