@@ -1143,7 +1143,7 @@ function doSave(storage_id, filename){
 <script src="https://mde.tw/cp2021/cmsimde/static/sylvester.js"></script>
 <script src="https://mde.tw/cp2021/cmsimde/static/PrairieDraw.js"></script>
 </p>
-<p><button id="add1to100">add 1 to 100</button><button id="p261">p261</button><button id="rocflag">ROC flag</button><button id="w13">w13</button><button id="snake">snake</button><button id="final1">final1</button></p>
+<p><button id="add1to100">add 1 to 100</button><button id="p261">p261</button><button id="rocflag">ROC flag</button><button id="w13">w13</button><button id="snake">snake</button><button id="final1">final1</button><button id="final2">final2</button></p>
 <p><!-- ######################  editor1 開始 ###################### --></p>
 <p><!-- 用來顯示程式碼的 editor 區域 --></p>
 <div id="kw_editor1" style="width: 600px; height: 300px;"></div>
@@ -1247,7 +1247,17 @@ doc["w13"].bind('click', w13.do)
 snake_url="https://gist.githubusercontent.com/jamie920130/33f4fd35f04dcb0d4d039077d8ee0340/raw/9088a7fd01730c23c55abcea2322ba2c09ad8e61/snake%2520run.py"
 snake = button2(snake_url)
 doc["snake"].bind('click', snake.do)
-################################## w13 end
+################################## snake end
+################################## final1 start
+final1_url="https://gist.githubusercontent.com/jamie920130/7fd3c6cf78fe08a6308b4907bebf4538/raw/4d8dcd99e22855965cd2a53927f6b59b098ad428/final1"
+final1 = button2(final1_url)
+doc["final1"].bind('click', final1.do)
+################################## final1 end
+################################## final2 start
+final2_url="https://gist.githubusercontent.com/jamie920130/8d45d3db676eb7c4f9c6b39c36f33ded/raw/60fa6378267498aef69362040f69d091ebfab22e/final2"
+final2 = button2(final2_url)
+doc["final2"].bind('click', final2.do)
+################################## final2 end
 </script>
 </p><h1>Final Project</h1>
 <p>Final Project 佔學期成績 30%</p>
